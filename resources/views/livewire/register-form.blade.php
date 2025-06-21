@@ -53,8 +53,6 @@
           <div>
             @if($form->image)
               <img src="{{$form->image->temporaryUrl() }}" alt="">
-              @else
-              <p>No Image</p>
             @endif
           </div>
           <div wire:loading wire:target="$form->image">
